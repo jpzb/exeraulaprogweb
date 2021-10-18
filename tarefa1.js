@@ -10,7 +10,6 @@ const lista = document.querySelector('ol');
 topicos.forEach(topico => {
     const item = document.createElement('li');
     item.textContent = topico;
-    const item2 = copy.shift();
     const link = createElement('a');
     link.setAttribute('href', '#{topico}');
     lista.append(item); 

@@ -14,4 +14,5 @@ topicos.forEach(topico => {
     const link = createElement('a');
     link.setAttribute('href', '#{topico}');
     lista.append(item); 
+    item.append(link)
 });

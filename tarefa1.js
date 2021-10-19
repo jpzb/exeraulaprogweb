@@ -1,9 +1,7 @@
 const subtitulos = document.querySelectorAll('h2');
 const topicos = new Array();
-const ids = new Array();
 subtitulos.forEach(subtitulo => {
     topicos.push(subtitulo.textContent);
-    ids.push(subtitulo.id);
     const ancora = document.createElement('a');
     ancora.setAttribute('name', subtitulo.textContent);
     subtitulo.append(ancora);
@@ -22,4 +20,3 @@ topicos.forEach(topico => {
     item.append(link);
 });
 
-// INCOMPLETO

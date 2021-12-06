@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central de Arquivos</title>
+    <style>
+        #tudo{
+            position: absolute;
+            left: 500px;
+            top: 200px;
+        }
+        body{
+            background-color: black;
+        }
+        h1{
+            color: rgb(196, 195, 195);
+            padding-left: 7em;      
+            padding-top: 1em;
+        }
+        ul.navbar{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 8em;
+            left: 15em;
+            width: 15em;
+        }
+        ul.navbar li{
+            background: rgb(196, 195, 195);
+            margin: 0.5em 0;
+            padding: 0.3em;
+        }
+        ul.navbar li#um{
+            border-right: 1em solid green;
+        }
+        ul.navbar li#dois{
+            border-right: 1em solid blue;
+        }
+        ul.navbar li.tres{
+            border-right: 1em solid red;
+        }
+        ul.navbar a{
+            text-decoration: none;
+        }
+        a:link{
+            color: rgb(26, 26, 26);
+        }
+        a:visited{
+            color: black;
+        }
+    </style>
+</head>
+<body> 
+    <div id="tudo">
+        <h1>Central de Arquivos</h1>
+        <ul class="navbar">
+            <li id="um">
+                <a href="arquivosN1.html">Arquivos Nível 1</a>
+            </li>
+            <li id="dois">
+                <a href="arquivosN2.html">Arquivos Nível 2</a>
+            </li> 
+            <li class="tres">
+                <a href="arquivosN3.html">Arquivos Nível 3</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

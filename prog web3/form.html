@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style type="text/css">
+        fieldset{
+            width: 300px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 8px;
+        }
+        body{
+            display: flex;
+            justify-content: center;  
+            font-family: "Nunito";  
+        }
+        text{
+            border: none;
+
+            font-size: 16px;
+            margin: 0px;
+            padding: 15px;
+            outline: 0;
+            height: auto;
+            box-shadow: 0px 1px;
+            width: 100px;
+        }
+        .num{
+            font-size: 18px;
+            background-color: rgb(0, 200, 0);
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section id="tudo">
+        <h1 style="text-align: center;">Cadastrar Usuário</h1>
+            <form action="index.html" method="post">
+                <fieldset>
+                    <legend><label class="num">1</label> Dados Pessoais</legend>
+                    <label>Nome:</label>
+                    <br>
+                    <input type="text" id="nome">
+                    <br>
+                    <label>Email:</label>
+                    <br>
+                    <input type="text" id="email">
+                    <br>
+                    <label>Senha:</label>
+                    <br>
+                    <input type="password" id="senha">
+                    <br>
+                    <label>Confirmar senha:</label>
+                    <br>
+                    <input type="password" id="confirmar">
+                    <br>
+                    <label>Idade:</label>
+                    <br>
+                    <input type="radio" id="idade">
+                    <label for="idade">Acima 17</label>
+                    <br>
+                    <input type="radio" id="idade2">
+                    <label for="idade2">Abaixo ou igual 17</label>
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><label class="num">2</label> Perfil</legend>
+                    <label>Descrição:</label>
+                    <br>
+                    <textarea cols="30" rows="3"></textarea>
+                    <br>
+                    <label>Perfil trabalho:</label>
+                    <br>
+                    <select id="pf">
+                        <option value="front-end-dev">Front-end Developer</option>
+                        <option value="back-end-dev">Back-end Developer</option>
+                    </select>
+                    <br>
+                    <label>Interesse:</label>
+                    <br>
+                    <input id="int1" type="checkbox">
+                    <label for="int1">Programador</label>
+                    <br>
+                    <input type="checkbox" id="int2">
+                    <label for="int2">Design</label>
+                    <br>
+                    <input type="checkbox" id="int3">
+                    <label for="int3">Analista</label>
+                </fieldset>
+                <br>
+                <button type="submit">Enviar dados</button>        
+            </form>
+    </section>
+</body>
+</html>
